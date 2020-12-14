@@ -1,0 +1,23 @@
+@import'./assets/scss/Helper/mixin';
+@import'./assets/scss/Helper/variables';
+@import'./assets/scss/Helper/extend';
+
+//Base
+@import'./assets/scss/Base/reset';
+@import'./assets/scss/Base/customizes';
+
+//Components
+@import'./assets/scss/Components/button';
+@import'./assets/scss/Components/container';
+@import'./assets/scss/Components/slick';
+@import'./assets/scss/Components/loadingComponent';
+@import'./assets/scss/Components/adminTemplate';
+
+// Layouts
+@import'./assets/scss/Layout/header';
+@import'./assets/scss/Layout/home';
+@import'./assets/scss/Layout/footer';
+@import'./assets/scss/Layout/khoaHocTheoMuc';
+@import'./assets/scss/Layout/form';
+@import'./assets/scss/Layout/userProfile';
+@import'./assets/scss/Layout/khoaHocDangKy'

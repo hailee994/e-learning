@@ -1,0 +1,122 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+
+  .navbar {
+    width: 100%;
+    background-color: transparent;
+    transition: all .3s;
+
+    .navbar-brand {
+      h2 {
+        color: white;
+        font-weight: bold;
+      }
+    }
+
+    .collapse {
+      .navbar-nav {
+        margin-right: 20px;
+
+        .nav-item {
+          .nav-link {
+            color: white;
+            font-weight: bold;
+            margin: 0 2px;
+          }
+
+          hr {
+            margin: 0;
+            width: 0;
+            height: 1px;
+            background-color: transparent;
+            transition: all .3s;
+          }
+
+          &:hover {
+            hr {
+              width: 100%;
+              background-color: white;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  .btn_form {
+    width: 20%;
+    display: flex;
+
+    .nav_form {
+      font-weight: bold;
+      text-decoration: none;
+
+      hr {
+        margin: 0;
+        width: 0;
+        height: 1px;
+        background-color: transparent;
+        transition: all .3s;
+      }
+
+      &:hover {
+        hr {
+          width: 100%;
+          background-color: white;
+        }
+      }
+    }
+
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  .navbar.active {
+    background-color: #000;
+  }
+}
+
+.mainHead {
+  position: relative;
+}
+
+@include responsive("xl") {
+  header {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+  }
+}
+
+@include responsive("small") {
+  header {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+
+    .navbar {
+      width: 100%;
+      // background-color: transparent;
+
+      .navbar-toggler {
+        background-color: #fff;
+      }
+
+      hr {
+        height: 0;
+        border-top: none;
+      }
+    }
+
+    .btn_form {
+      width: 70%;
+      margin-bottom: 10px;
+    }
+  }
+}

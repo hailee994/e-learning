@@ -1,0 +1,49 @@
+.khoaHocDM {
+  .row1 {
+    margin-top: 50px;
+
+    .list-group {
+      .list-group-item {
+        border: none;
+      }
+    }
+  }
+}
+
+
+.khoaHocTheoMuc {
+
+  .card {
+
+    img {
+      width: 100%;
+      max-height: 125px;
+    }
+
+    .card-text,
+    .card-title {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+  }
+}
+
+@include responsive("small") {
+  .khoaHocDM {
+    .row1 {
+      position: relative;
+
+      .list-group {
+        position: absolute;
+        visibility: hidden;
+      }
+
+      .khoaHocDM_thongTin {
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+}

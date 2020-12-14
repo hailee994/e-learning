@@ -1,0 +1,43 @@
+.khoaHocDk {
+  .table {
+    text-align: center;
+
+    a {
+      cursor: pointer;
+
+      .fa {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .navHide {
+    visibility: hidden;
+  }
+}
+
+@include responsive("small") {
+  .khoaHocDk {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 10px;
+
+    .container {
+      width: 100%;
+      padding: 0;
+
+      .table {
+        width: 95%;
+        text-align: left;
+      }
+
+      .navHide {
+        visibility: visible;
+
+        .fa-angle-double-left {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
